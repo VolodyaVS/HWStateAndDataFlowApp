@@ -3,7 +3,7 @@
 //  StateAndDataFlowApp
 //
 //  Created by Alexey Efimov on 21.10.2020.
-//
+//  Modified by Vladimir Stepanchikov on 25.10.2020.
 
 import SwiftUI
 
@@ -21,41 +21,6 @@ struct ContentView: View {
                 .offset(x: 0, y: 200)
             Spacer()
             ButtonView(timer: timer)
-        }
-    }
-}
-struct ButtonView: View {
-    @ObservedObject var timer: TimeCounter
-    
-    var body: some View {
-        VStack(spacing: 100) {
-            Button(action: { timer.startTimer() }) {
-                Text("\(timer.buttonTitle)")
-                    .font(.largeTitle)
-                    .fontWeight(.bold)
-                    .foregroundColor(.white)
-            }
-            .frame(width: 200, height: 60)
-            .background(Color.red)
-            .cornerRadius(20)
-            .overlay(
-                RoundedRectangle(cornerRadius: 20, style: .continuous)
-                    .stroke(Color.black, lineWidth: 4)
-            )
-            
-            Button(action: {  }) {
-                Text("Log Out")
-                    .font(.largeTitle)
-                    .fontWeight(.bold)
-                    .foregroundColor(.white)
-            }
-            .frame(width: 200, height: 60)
-            .background(Color.blue)
-            .cornerRadius(20)
-            .overlay(
-                RoundedRectangle(cornerRadius: 20, style: .continuous)
-                    .stroke(Color.black, lineWidth: 4)
-            )
         }
     }
 }

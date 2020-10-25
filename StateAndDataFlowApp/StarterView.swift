@@ -12,11 +12,8 @@ struct StarterView: View {
     
     var body: some View {
         Group {
-            
             if user.isRegister {
-//            if let userName = UserDefaults.standard.value(forKey: "UserName")
                 ContentView()
-//                user.name = userName as! String
             } else {
                 RegisteredView()
             }

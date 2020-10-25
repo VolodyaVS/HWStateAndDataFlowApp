@@ -3,7 +3,7 @@
 //  StateAndDataFlowApp
 //
 //  Created by Alexey Efimov on 21.10.2020.
-//
+//  Modified by Vladimir Stepanchikov on 25.10.2020.
 
 import Foundation
 import Combine

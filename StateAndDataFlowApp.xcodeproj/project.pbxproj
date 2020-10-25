@@ -15,6 +15,7 @@
 		A88CDAE62540BC9F00A375AC /* RegisteredView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88CDAE52540BC9F00A375AC /* RegisteredView.swift */; };
 		A88CDAE92540BDE700A375AC /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88CDAE82540BDE700A375AC /* UserManager.swift */; };
 		A88CDAEC2540C01B00A375AC /* StarterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88CDAEB2540C01B00A375AC /* StarterView.swift */; };
+		FFD218892545628F00C03EB4 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD218882545628F00C03EB4 /* ButtonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		A88CDAE52540BC9F00A375AC /* RegisteredView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisteredView.swift; sourceTree = "<group>"; };
 		A88CDAE82540BDE700A375AC /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
 		A88CDAEB2540C01B00A375AC /* StarterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarterView.swift; sourceTree = "<group>"; };
+		FFD218882545628F00C03EB4 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				A88CDAEB2540C01B00A375AC /* StarterView.swift */,
 				A88CDAE52540BC9F00A375AC /* RegisteredView.swift */,
 				A88CDAD32540ACB200A375AC /* ContentView.swift */,
+				FFD218882545628F00C03EB4 /* ButtonView.swift */,
 				A88CDAE12540B4B600A375AC /* TimeCounter.swift */,
 				A88CDAE82540BDE700A375AC /* UserManager.swift */,
 				A88CDAD52540ACB400A375AC /* Assets.xcassets */,
@@ -156,6 +159,7 @@
 				A88CDAD42540ACB200A375AC /* ContentView.swift in Sources */,
 				A88CDAE92540BDE700A375AC /* UserManager.swift in Sources */,
 				A88CDAD22540ACB200A375AC /* StateAndDataFlowAppApp.swift in Sources */,
+				FFD218892545628F00C03EB4 /* ButtonView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
