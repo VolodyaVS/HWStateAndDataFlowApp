@@ -16,6 +16,8 @@
 		A88CDAE92540BDE700A375AC /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88CDAE82540BDE700A375AC /* UserManager.swift */; };
 		A88CDAEC2540C01B00A375AC /* StarterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88CDAEB2540C01B00A375AC /* StarterView.swift */; };
 		FFD218892545628F00C03EB4 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD218882545628F00C03EB4 /* ButtonView.swift */; };
+		FFE76264254CA3DE00B4DE81 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE76263254CA3DE00B4DE81 /* DataManager.swift */; };
+		FFE7626E254CAA5900B4DE81 /* ButtonAppearanceModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE7626D254CAA5900B4DE81 /* ButtonAppearanceModifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		A88CDAE82540BDE700A375AC /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
 		A88CDAEB2540C01B00A375AC /* StarterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarterView.swift; sourceTree = "<group>"; };
 		FFD218882545628F00C03EB4 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
+		FFE76263254CA3DE00B4DE81 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		FFE7626D254CAA5900B4DE81 /* ButtonAppearanceModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonAppearanceModifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,13 +66,10 @@
 		A88CDAD02540ACB200A375AC /* StateAndDataFlowApp */ = {
 			isa = PBXGroup;
 			children = (
-				A88CDAD12540ACB200A375AC /* StateAndDataFlowAppApp.swift */,
-				A88CDAEB2540C01B00A375AC /* StarterView.swift */,
-				A88CDAE52540BC9F00A375AC /* RegisteredView.swift */,
-				A88CDAD32540ACB200A375AC /* ContentView.swift */,
-				FFD218882545628F00C03EB4 /* ButtonView.swift */,
-				A88CDAE12540B4B600A375AC /* TimeCounter.swift */,
-				A88CDAE82540BDE700A375AC /* UserManager.swift */,
+				FFE76268254CA48600B4DE81 /* Views */,
+				FFE76270254CAA6100B4DE81 /* Modifiers */,
+				FFE7626A254CA4BF00B4DE81 /* Models */,
+				FFE76266254CA47000B4DE81 /* Managers */,
 				A88CDAD52540ACB400A375AC /* Assets.xcassets */,
 				A88CDADA2540ACB400A375AC /* Info.plist */,
 				A88CDAD72540ACB400A375AC /* Preview Content */,
@@ -82,6 +83,43 @@
 				A88CDAD82540ACB400A375AC /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FFE76266254CA47000B4DE81 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				A88CDAE82540BDE700A375AC /* UserManager.swift */,
+				FFE76263254CA3DE00B4DE81 /* DataManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		FFE76268254CA48600B4DE81 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A88CDAD12540ACB200A375AC /* StateAndDataFlowAppApp.swift */,
+				A88CDAEB2540C01B00A375AC /* StarterView.swift */,
+				A88CDAE52540BC9F00A375AC /* RegisteredView.swift */,
+				A88CDAD32540ACB200A375AC /* ContentView.swift */,
+				FFD218882545628F00C03EB4 /* ButtonView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FFE7626A254CA4BF00B4DE81 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A88CDAE12540B4B600A375AC /* TimeCounter.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FFE76270254CAA6100B4DE81 /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				FFE7626D254CAA5900B4DE81 /* ButtonAppearanceModifier.swift */,
+			);
+			path = Modifiers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,7 +191,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFE7626E254CAA5900B4DE81 /* ButtonAppearanceModifier.swift in Sources */,
 				A88CDAE62540BC9F00A375AC /* RegisteredView.swift in Sources */,
+				FFE76264254CA3DE00B4DE81 /* DataManager.swift in Sources */,
 				A88CDAE22540B4B600A375AC /* TimeCounter.swift in Sources */,
 				A88CDAEC2540C01B00A375AC /* StarterView.swift in Sources */,
 				A88CDAD42540ACB200A375AC /* ContentView.swift in Sources */,

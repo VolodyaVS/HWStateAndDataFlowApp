@@ -8,16 +8,25 @@
 import SwiftUI
 
 struct StarterView: View {
-    @EnvironmentObject var user: UserManager
+    @EnvironmentObject var userManager: UserManager
     
     var body: some View {
         Group {
-            if user.isRegister {
+            if userManager.user.isRegistered {
                 ContentView()
             } else {
                 RegisteredView()
+                    .onTapGesture{
+                        UIApplication.shared.endEditing()
+                    }
             }
         }
+    }
+}
+
+extension UIApplication {
+    func endEditing() {
+        sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
     }
 }
 
